@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cred{
+            height:500px;width:400px;background-color: pink;
+            margin-top: 0px;
+            margin-left:600px;
+            border-style:groove;
+        }
+        .cred1{
+            height:200px;width:340px;background-color:lawngreen;
+            margin-top: 20px;
+            margin-left:25px;
+            border-style:double;
+            }
+    </style>
+</head>
+<body>
+    <div style=" height:750px;width:100%;background-color:blanchedalmond">
+        <div class="cred">
+            <p style="margin-top: 20px;margin-left:150px;"><h1>Calculator</h1></p><br>
+            <p style="text-align: center;"><h3>Input any two numbers.</h3></p><br>
+            <input type="number" placeholder="First Number" id="fno" />
+            <input type="number" placeholder="Second Number" id="sno" />
+            <h3 id="add">Result :</h3>
+            <div class="cred1">
+                <button onclick="sum()";button style="background-color: white;height:20px;width:50%;margin-top: 18px;margin-left: 25% ;"><b>ADD</b></button><br>
+                <button onclick="subtract()";button style="background-color: white;height:20px;width:50%;margin-top: 18px;margin-left: 25% ;"><b>SUBTRACT</b></button><br>
+                <button onclick="multiply()";button style="background-color: white;height:20px;width:50%;margin-top: 18px;margin-left: 25% ;"><b>MULTIPLY</b></button><br>
+                <button onclick="divide()";button style="background-color: white;height:20px;width:50%;margin-top: 18px;margin-left: 25% ;"><b>DIVIDE</b></button><br>
+
+            </div>
+
+
+        </div>
+    </div>
+    
+</body>
+<script>
+    function sum() {
+      var fno = document.getElementById("fno").value;
+      var sno = document.getElementById("sno").value;
+      document.getElementById("add").innerText = Number(fno) + Number(sno);
+    }
+    function subtract() {
+      var fno = document.getElementById("fno").value;
+      var sno = document.getElementById("sno").value;
+      document.getElementById("add").innerText = Number(fno) - Number(sno);
+    }
+    function multiply() {
+      var fno = document.getElementById("fno").value;
+      var sno = document.getElementById("sno").value;
+      document.getElementById("add").innerText = Number(fno) * Number(sno);
+    }
+    function divide() {
+      var fno = document.getElementById("fno").value;
+      var sno = document.getElementById("sno").value;
+      document.getElementById("add").innerText = Number(fno) / Number(sno);
+    }
+  </script>
+</html>
